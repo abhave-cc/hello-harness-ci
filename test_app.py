@@ -1,7 +1,11 @@
 from app import greet
 
 def test_default_greeting():
-    assert greet() == "Hello, world!"
+    message = greet()
+    print(message)
+    assert message == "Hello, world!"
 
 def test_named_greeting():
-    assert greet("Harness") == "Hello, Harness!"
+    message = greet("Harness")
+    print(message)
+    assert message == "Hello, Harness!"
