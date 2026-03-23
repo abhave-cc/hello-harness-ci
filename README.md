@@ -1,3 +1,3 @@
 # hello-harness-ci
 
-This is a test message
+This is a test message 2
