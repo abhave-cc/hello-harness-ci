@@ -9,4 +9,4 @@ def test_quote():
     client = app.test_client()
     response = client.get("/quote")
     assert response.status_code == 200
-    assert "message" in response.get_json()
+    assert response.get_json() == {"message": "Hello, CI!"}
