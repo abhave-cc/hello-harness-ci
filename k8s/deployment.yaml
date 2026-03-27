@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-harness-ci
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-harness-ci
+  template:
+    metadata:
+      labels:
+        app: hello-harness-ci
+    spec:
+      containers:
+        - name: hello-harness-ci
+          image: <+artifact.image>
+          ports:
+            - containerPort: 5000
