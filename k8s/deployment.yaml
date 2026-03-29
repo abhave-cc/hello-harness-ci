@@ -15,5 +15,6 @@ spec:
       containers:
         - name: hello-harness-ci
           image: ameyabhavecc/hello-harness-ci:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
