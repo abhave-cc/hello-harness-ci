@@ -14,3 +14,6 @@ def health():
 def quote():
     author = os.getenv("QUOTE_AUTHOR", "Harness")
     return jsonify(message=greet(author))
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
