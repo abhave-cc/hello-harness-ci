@@ -6,6 +6,10 @@ app = Flask(__name__)
 def greet(name: str = "world") -> str:
     return f"Hello, {name}!"
 
+@app.get("/")
+def home():
+    return "Hello from Harness CI!"
+
 @app.get("/health")
 def health():
     return jsonify(status="ok")
