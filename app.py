@@ -8,7 +8,7 @@ def greet(name: str = "world") -> str:
 
 @app.get("/")
 def home():
-    return "Hello from Harness CI!"
+    return "Hello from EKS v2 - green candidate!"
 
 @app.get("/health")
 def health():
