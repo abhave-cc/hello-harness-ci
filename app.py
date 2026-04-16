@@ -8,7 +8,7 @@ def greet(name: str = "world") -> str:
 
 @app.get("/")
 def home():
-    return "Hello from EKS v2 - green candidate!"
+    return "Hello from EKS v3 - Canary!"
 
 @app.get("/health")
 def health():
