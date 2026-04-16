@@ -10,7 +10,7 @@ def test_home_route():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Hello from EKS v2 - green candidate!" in response.data
+    assert b"Hello from EKS v3 - Canary!" in response.data
 
 def test_health_route():
     client = app.test_client()
